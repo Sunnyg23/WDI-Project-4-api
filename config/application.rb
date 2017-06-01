@@ -18,6 +18,6 @@ module WDIProject4Api
 
 
     config.api_only = true
-    config.autoload_paths << Rail.root.join('lib')
+    config.autoload_paths << Rails.root.join('lib')
   end
 end
