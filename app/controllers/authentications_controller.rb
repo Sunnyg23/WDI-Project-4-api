@@ -1,6 +1,8 @@
 class AuthenticationsController < ApplicationController
   skip_before_action :authenticate_user!
+
   def register
+p user_params
     user = User.new(user_params)
     if user.save
       token = Auth.issue({id: user.id})
@@ -21,9 +23,7 @@ class AuthenticationsController < ApplicationController
   end
 
   def user_params
-    hash = {}
-    hash.merge! params.slice(:username, :first_name, :last_name, :email, :password, :password_confirmation).permit!
-    hash
+    params.permit(:username, :first_name, :last_name, :email, :password, :password_confirmation)
   end
 
 end
