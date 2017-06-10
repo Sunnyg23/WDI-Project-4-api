@@ -4,34 +4,34 @@
 # Product.destroy_all
 # Request.destroy_all
 
-u1 = User.create(first_name: "Sunny", last_name: "Bill", username: "sunny_luvvin", email: "sunny@sunny.com", password: "password", password_confirmation: "password", profile_pic: "dic pic", user_type: "Poster")
+u1 = User.create(first_name: "Sunny", last_name: "Singh", username: " sunny", email: "sunny@sunny.com", password: "password", password_confirmation: "password", profile_pic: "dic pic", user_type: "Poster")
 
 c1 = Category.create!(name: "Mancare", image: '/images/categories/1.jpg')
-# c2 = Category.create!(name: "Backpacks", image: '/images/categories/2.jpg')
-# c3 = Category.create!(name: "Trainers", image: '/images/categories/3.jpg')
-# c4 = Category.create!(name: "Hoddies", image: '/images/categories/4.jpg')
-# c5 = Category.create!(name: "Game C's", image: '/images/categories/5.jpg')
-# c6 = Category.create!(name: "Watches", image: '/images/categories/6.jpg')
+c2 = Category.create!(name: "Backpacks", image: '/images/categories/2.jpg')
+c3 = Category.create!(name: "Trainers", image: '/images/categories/3.jpg')
+c4 = Category.create!(name: "Hoddies", image: '/images/categories/4.jpg')
+c5 = Category.create!(name: "Game C's", image: '/images/categories/5.jpg')
+c6 = Category.create!(name: "Watches", image: '/images/categories/6.jpg')
 
 
 b1 = Brand.create!(name: "Nivea", code: '1', image: '/images/brands/7.jpg', logo: '/images/brands/8.jpg')
-# b2 = Brand.create!(name: "Loreal", code: '2', image: '/images/brands/9.jpg', logo: '/images/brands/10.jpg')
-# b3 = Brand.create!(name: "Lynx", code: '3', image: '/images/brands/11.jpg', logo: '/images/brands/12.jpg')
-# b4 = Brand.create!(name: "MCM", code: '4', image: '/images/brands/13.jpg', logo: '/images/brands/14.jpg')
-# b5 = Brand.create!(name: "Louis Vuitton", code: '5', image: '/images/brands/15.jpg', logo: '/images/brands/16.jpg')
-# b6 = Brand.create!(name: 'Hershel', code: '6', image: '/images/brands/17.jpg', logo: '/images/brands/18.jpg')
-# b7 = Brand.create!(name: 'Addidas', code: '7', image: '/images/brands/19.jpg', logo: '/images/brands/20.jpg')
-# b8 = Brand.create!(name: 'Nike', code: '8', image: '/images/brands/21.jpg', logo: '/images/brands/22.jpg')
-# b9 = Brand.create!(name: 'Reebok', code: '9', image: '/images/brands/23.jpg', logo: '/images/brands/24.jpg')
-# b10 = Brand.create!(name: 'Billionaires Boys Club', code:'10', image: '/images/brands/25.jpg', logo: '/images/brands/26.jpg')
-# b11 = Brand.create!(name: 'Jack&Jones', code: '11', image: '/images/brands/27.jpg', logo: '/images/brands/28.jpg')
-# b12 = Brand.create!(name: 'Money', code: '12', image: '/images/brands/29.jpg', logo: '/images/brands/30.jpg')
-# b13 = Brand.create!(name: 'Playstation', code: '13', image: '/images/brands/31.jpg', logo: '/images/brands/32.jpg')
-# b14 = Brand.create!(name: 'Xbox', code: '14', image: '/images/brands/33.jpg', logo: '/images/brands/34.jpg')
-# b15 = Brand.create!(name: 'Nintendo', code: '15', image: '/images/brands/35.jpg', logo: '/images/brands/36.jpg')
-# b16 = Brand.create!(name: 'Apple', code: '16', image: '/images/brands/37.jpg', logo: '/images/brands/38.jpg')
-# b17 = Brand.create!(name: 'U-Boat', code: '17', image: '/images/brands/39.jpg', logo: '/images/brands/40.jpg')
-# b18 = Brand.create!(name: 'Marc Jacobs', code: '18', image: '/images/brands/41.jpg', logo: '/images/brands/42.jpg')
+b2 = Brand.create!(name: "Loreal", code: '2', image: '/images/brands/9.jpg', logo: '/images/brands/10.jpg')
+b3 = Brand.create!(name: "Lynx", code: '3', image: '/images/brands/11.jpg', logo: '/images/brands/12.jpg')
+b4 = Brand.create!(name: "MCM", code: '4', image: '/images/brands/13.jpg', logo: '/images/brands/14.jpg')
+b5 = Brand.create!(name: "Louis Vuitton", code: '5', image: '/images/brands/15.jpg', logo: '/images/brands/16.jpg')
+b6 = Brand.create!(name: 'Hershel', code: '6', image: '/images/brands/17.jpg', logo: '/images/brands/18.jpg')
+b7 = Brand.create!(name: 'Addidas', code: '7', image: '/images/brands/19.jpg', logo: '/images/brands/20.jpg')
+b8 = Brand.create!(name: 'Nike', code: '8', image: '/images/brands/21.jpg', logo: '/images/brands/22.jpg')
+b9 = Brand.create!(name: 'Reebok', code: '9', image: '/images/brands/23.jpg', logo: '/images/brands/24.jpg')
+b10 = Brand.create!(name: 'Billionaires Boys Club', code:'10', image: '/images/brands/25.jpg', logo: '/images/brands/26.jpg')
+b11 = Brand.create!(name: 'Jack&Jones', code: '11', image: '/images/brands/27.jpg', logo: '/images/brands/28.jpg')
+b12 = Brand.create!(name: 'Money', code: '12', image: '/images/brands/29.jpg', logo: '/images/brands/30.jpg')
+b13 = Brand.create!(name: 'Playstation', code: '13', image: '/images/brands/31.jpg', logo: '/images/brands/32.jpg')
+b14 = Brand.create!(name: 'Xbox', code: '14', image: '/images/brands/33.jpg', logo: '/images/brands/34.jpg')
+b15 = Brand.create!(name: 'Nintendo', code: '15', image: '/images/brands/35.jpg', logo: '/images/brands/36.jpg')
+b16 = Brand.create!(name: 'Apple', code: '16', image: '/images/brands/37.jpg', logo: '/images/brands/38.jpg')
+b17 = Brand.create!(name: 'U-Boat', code: '17', image: '/images/brands/39.jpg', logo: '/images/brands/40.jpg')
+b18 = Brand.create!(name: 'Marc Jacobs', code: '18', image: '/images/brands/41.jpg', logo: '/images/brands/42.jpg')
 
 # b1.categories << c1
 # b2.categories << c1
@@ -55,7 +55,7 @@ b1 = Brand.create!(name: "Nivea", code: '1', image: '/images/brands/7.jpg', logo
 # b17.categories << c6
 # b18.categories << c6
 
-p1 = u1.products.create!(code: "1", name: "NIVEA MEN CREME", image: "/images/products/43.jpg", price: "5", description: "NIVEA MEN CREME cares for your skin by giving it a boost of hydration and preventing it from drying out. The light formula is non-greasy, non-sticky and absorbs quickly.", category_id: 1, brand_id: 1, user_id: 1)
+p1 = u1.products.create!(code: "1", name: "NIVEA MEN CREME", image: "/images/products/43.jpg", price: "5", description: "NIVEA MEN CREME cares for your skin by giving it a boost of hydration and preventing it from drying out. The light formula is non-greasy, non-sticky and absorbs quickly.")
 
 b1.products << p1
 c1.products << p1
