@@ -4,7 +4,7 @@
 # Product.destroy_all
 # Request.destroy_all
 
-u1 = User.create(first_name: "Sunny", last_name: "Singh", username: " sunny", email: "sunny@sunny.com", password: "password", password_confirmation: "password", profile_pic: "dic pic", user_type: "Poster")
+u1 = User.create(first_name: "Sunny", last_name: "Singh", username: " sunny", email: "sunny@sunny.com", password: "password", password_confirmation: "password", profile_pic: "/images/2000.jpg", user_type: "Seller")
 
 c1 = Category.create!(name: "Mancare", image: '/images/categories/1.jpg')
 c2 = Category.create!(name: "Backpacks", image: '/images/categories/2.jpg')
@@ -57,16 +57,15 @@ b18 = Brand.create!(name: 'Marc Jacobs', code: '18', image: '/images/brands/41.j
 
 p1 = u1.products.create!(code: "1", name: "NIVEA MEN CREME", image: "/images/products/43.jpg", price: "5", description: "NIVEA MEN CREME cares for your skin by giving it a boost of hydration and preventing it from drying out. The light formula is non-greasy, non-sticky and absorbs quickly.")
 
-b1.products << p1
-c1.products << p1
+
 #
 # p2 = u1.products.create!(code: "2", name: "SENSITIVE SHAVING GEL", image: "/images/products/44.jpg", price: "5", description: "The improved Shaving Foam contains 0% alcohol*. It is extra gentle, fragrance-neutral and enriched with the powerful combination of Chamomile and Hamamelis to care for the skin before you shave", category_id: 1, brand_id: 1, user_id: 1)
 #
 # p3 = u1.products.create!(code: "3", name: "ACTIVE CLEAN SHOWER GEL", image: "/images/products/45.jpg", price: "5", description: "For men who want to be thoroughly clean and revitalised. An innovative formula with natural Active Charcoal: work as a dirt magnet, cleanses your skin thoroughly without drying it out.
 # The effective, yet mild gel with masculine scent transforms into white caring foam, leaving your skin and hair feeling revitalised and cared for.", category_id: 1, brand_id: 1, user_id: 1)
 #
-# p4 = u1.products.create!(code: "4", name: "ACTIVE AGE NIGHT REGENERATOR", image: "/images/products/46.jpg", price: "10", description: "Regenerative care for mature skin. The innovative formula, with skin's own Creatine and Caffeine, regenerates the skin with 6 effects in 1 application during the night", category_id: 1, brand_id: 1, user_id: 1)
-#
+p4 = u1.products.create!(code: "4", name: "ACTIVE AGE NIGHT REGENERATOR", image: "/images/products/46.jpg", price: "10", description: "Regenerative care for mature skin. The innovative formula, with skin's own Creatine and Caffeine, regenerates the skin with 6 effects in 1 application during the night")
+
 # p5 = u1.products.create!(code: "5", name: "MEN EXPERT INVINCIBLE SPORT", image: "/images/products/47.jpg", price: "5", description: "High performance aerosol, helps keep your underarms dry for up to 96hrs.", category_id: c1.id, brand_id: b1.id, user_id: u1.id)
 #
 # p6 = u1.products.create!(code: "6", name: "HYDRA ENERGETIC TATTOO REVIVER CREAM", image: "/images/products/48.jpg", price: "5", description: "REVIVE YOUR INK, ENERGISE YOUR SKIN!, Daily Moisturising Body Lotion", category_id: 1, brand_id: 2, user_id: 1)
